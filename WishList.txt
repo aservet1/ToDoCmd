@@ -1,0 +1,12 @@
+What do I want this to do:
+
+Write 'todocmd' command, brings up menu
+  options:
+	view lists
+	edit lists
+	make new category (ListStorage/newFolder) -- default category is Misc
+
+
+settings:
+	text editor of your choice
+	custom map of <symbol> -- SymbolCategory
