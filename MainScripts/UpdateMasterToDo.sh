@@ -1,21 +1,33 @@
 #!/bin/bash
 
-cd ~/Documents/Projects/ToDoCmd/ListStorage ## do ListStorage/xyz when you get subfolders going in there
-rm -f MASTER.todo
+if [ -z $1 ]
+then 	echo 'no arg to UpdateMasterToDo.sh'
+	exit; fi
+
+category="/home/alejandro/Documents/Projects/ToDoCmd/ListStorage/$1"
+
+if [ ! -d $category ]
+	then echo "invalid path $category"
+	exit; fi
+
+cd $category
+
+masterList=MASTER_$1.todo
+rm -f $masterList
 
 lists=$(ls *.todo)
 
-touch tempMASTER.todo
+touch temp_master_list
 
 for list in $lists
 do
-	echo "================================"${list%".todo"}"=============================" >> tempMASTER.todo
-	cat $list >> tempMASTER.todo ##put it in the list of ToDo lists
-	echo "===================================================================" >> tempMASTER.todo
+	echo "================================"${list%".todo"}"=============================" >> temp_master_list
+	cat $list >> temp_master_list ##put it in the list of ToDo lists
+	echo "===================================================================" >> temp_master_list
 done
 
-touch MASTER.todo
-cat tempMASTER.todo > MASTER.todo
-rm tempMASTER.todo
+touch $masterList
+cat temp_master_list > $masterList
+rm temp_master_list
 
 #python ../sublists.py

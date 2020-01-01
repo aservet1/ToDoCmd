@@ -60,6 +60,24 @@ function rename()
 	fi
 }
 
+function edit_lists()
+{
+	ask_view_all
+	echo 'enter the name of the list you would like to edit'
+	read toedit
+	if [ -f $toedit.todo ]
+	then
+		nano $toedit.todo
+		../MainScripts/UpdateMasterToDo.sh
+	else
+		echo $toedit ' does not exist'
+		read response
+		if [ respose == 'y' ]
+			then edit_lists
+		fi
+	fi
+}
+
 function delete()
 {
 	ask_view_all
@@ -83,17 +101,21 @@ function delete()
 
 function main()
 {
+	MainScripts = $
+	cd ../ListStorage/Fall2019 #for now...need to have a way to choose which category and also make new categories
 	echo 'hello. your options: '
 	echo '(1) - see existing list'
 	echo '(2) - make new list'
 	echo '(3) - rename a list'
-	echo '(4) - delete a list'
+	echo '(4) - edit list(s)'
+	echo '(5) - delete a list'
 	read input
 	echo ''
 	if   [ $input == 1 ]; then view_all
 	elif [ $input == 2 ]; then make_new
 	elif [ $input == 3 ]; then rename
-	elif [ $input == 4 ]; then delete
+	elif [ $input == 4 ];  then edit_lists
+	elif [ $input == 5 ]; then delete
 	else echo 'no valid entry'; fi
 }
 
