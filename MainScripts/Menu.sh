@@ -72,7 +72,7 @@ function edit_lists()
 	done
 	nano $toedit
 
-	../../MainScripts/UpdateMasterToDo.sh .
+	../../MainScripts/UpdateMasterToDo.sh $(pwd)
 }
 
 function delete()
@@ -86,7 +86,7 @@ function delete()
 		i=$(( n-1 ))
 		todelete=${lists[i]%'.todo'}
 	fi
-	
+
 	if [ -f $todelete.todo ]
 	then	echo 'are you sure? this cannot be undone! at all!'
 		read response
@@ -106,11 +106,11 @@ function in_category()
 	category=$1
 	cd $category
 	echo 'in category '$category'. your options: '
-	echo '(1) - see existing lists'
-	echo '(2) - make new list'
-	echo '(3) - rename a list'
-	echo '(4) - edit list(s)'
-	echo '(5) - delete a list'
+	echo '(1) see existing lists'
+	echo '(2) make new list'
+	echo '(3) rename a list'
+	echo '(4) edit list(s)'
+	echo '(5) delete a list'
 	read input
 
 #	while [[ $input !=~ "^[1-5]$" ]]
@@ -130,10 +130,11 @@ function in_category()
 
 function main()
 {
-	cd ../ListStorage
+	homebase=/home/alejandro/Documents/Projects/ToDoCmd/ListStorage
+	cd $homebase
 	view_all
 	echo 'pick a category by name or number'
-#	categories=($(ls))
+	categories=($(ls))
 #	for i in ${!categories[@]}
 #	do	n=$(( $i+1 ))
 #		echo $n ${categories[i]}
@@ -153,7 +154,7 @@ function main()
 #		read category
 #	done
 
-	in_category $category
+	in_category "$homebase/$category"
 }
 
 main
