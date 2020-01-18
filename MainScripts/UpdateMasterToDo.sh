@@ -1,11 +1,14 @@
 #!/bin/bash
 
+source Parameters.sh
+
 if [ -z $1 ]
 then 	echo 'no arg to UpdateMasterToDo.sh'
-	exit; fi
+	exit
+fi
 
 #category="/home/alejandro/Documents/Projects/ToDoCmd/ListStorage/$1"
-category=$1
+category=$(echo $1 | sed 's|^.*/||')
 
 if [ ! -d $category ]
 	then echo "invalid path $category"
@@ -13,7 +16,7 @@ if [ ! -d $category ]
 
 cd $category
 
-masterList=MASTER_$1.todo
+masterList=MASTER_$category.todo
 rm -f $masterList
 
 lists=$(ls *.todo)

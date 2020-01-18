@@ -72,7 +72,7 @@ function edit_lists()
 	done
 	nano $toedit
 
-	../../MainScripts/UpdateMasterToDo.sh $(pwd)
+	$script_storage/UpdateMasterToDo.sh $(pwd | sed 's|^.*/||')
 }
 
 function delete()
@@ -130,8 +130,9 @@ function in_category()
 
 function main()
 {
-	homebase=/home/alejandro/Documents/Projects/ToDoCmd/ListStorage
-	cd $homebase
+	source /home/alejandro/Documents/Projects/ToDoCmd/MainScripts/Parameters.sh
+
+	cd $list_storage
 	view_all
 	echo 'pick a category by name or number'
 	categories=($(ls))
@@ -154,7 +155,7 @@ function main()
 #		read category
 #	done
 
-	in_category "$homebase/$category"
+	in_category "$category"
 }
 
 main
