@@ -2,31 +2,37 @@
 
 source ./Menu.sh #sets the variable $listnames
 
+prompt=">> "
+
 for name in $listnames
 do
 	echo "Deleting list: $name"
 	echo "Would you like to see the contents of the list before you delete it? (y/n)"
-	read response
+	echo -n $prompt; read response
 	
 	while [ $response != "y" ] && [ $response != "n" ]
 	do
 		echo "invalid response: $response. try again"
-		read response
+		echo -n $prompt; read response
 	done
 	
-	[ $response == "y" ] && cat $name
-	
+	if [ $response == "y" ]; then
+		echo ====================================
+		cat $name
+		echo ====================================
+	fi
+
 	echo "Confirm deleting: (y/n)"
-	read response
+	echo -n $prompt; read response
 	
 	while [ $response != "y" ] && [ $response != "n" ]
 	do
 		echo "invalid response: $response. try again"
-		read response
+		echo -n $prompt; read response
 	done
 	
 	[ $response == "y" ] && rm $name
 done
 
-echo "deletions done. remaining lists:"
-ls | sed 's/.todo//g'
+echo;echo "deletions done. remaining lists:"
+ls | sed 's/.todo//g' | sed 's/^/\ \ /'
