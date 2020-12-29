@@ -93,9 +93,9 @@ with the edit command, this one allows you to see them all at once on screen.
 `cmdtodo -f tag`: If you do not provide further command line arguments (after the tag), the Menu Prompt above will be invoked.
 
 Different items in your list might belong to different 'categories', such as *priorities*, *upcoming exams*, *tasks that will take like 5 minutes*,
-*big projects that are due in a while but you should start working on them soon*, etc. The way I solved this was to write a <tag> on each line of a certain
-category. So for my priority items, each line had <pr> somewhere on it. Then to filter out only those lines, I invoked `cmdtodo -f pr`. You assign whatever
-meaning you want to the <tag>s, the `cmdtodo -f` option just allows you to filter out only those entries.
+*big projects that are due in a while but you should start working on them soon*, etc. The way I solved this was to write a \<tag\> on each line of a certain
+category. So for my priority items, each line had \<pr\> somewhere on it. Then to filter out only those lines, I invoked `cmdtodo -f pr`. You assign whatever
+meaning you want to the \<tag\>s, the `cmdtodo -f` option just allows you to filter out only those entries.
  
 The results are printed to the console in the same format as **Viewing List Contents**.
 
