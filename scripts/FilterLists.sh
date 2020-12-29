@@ -3,7 +3,7 @@
 symbol=$1
 shift
 
-source Menu.sh $@
+source scripts/Menu.sh $@
 lists=$listnames
 
 for list in $lists

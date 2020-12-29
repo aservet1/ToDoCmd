@@ -1,35 +1,35 @@
 #!/bin/bash
 
-cd $CMDTODO_ROOT/scripts
+cd $CMDTODO_ROOT
 
 case $1 in
 	'e') ###edit###
 		shift
-		./Edit.sh $@
+		scripts/Edit.sh $@
 		;;
 	'v') ###view###
 		shift
-		./ViewLists.sh $@
+		scripts/ViewLists.sh $@
 		;;
 	'f') ###filter###
 		shift
 		tag=$1
 		shift
-		./FilterLists.sh '<'$tag'>' $@
+		scripts/FilterLists.sh '<'$tag'>' $@
 		;;
 	'dd') ###duedates###
-		./ViewLists.sh @ | grep -E '=|##.*#'
+		scripts/ViewLists.sh @ | grep -E '=|##.*#'
 		;;
 	'new') ###make new list###
 		shift
-		./NewList.sh $@
+		scripts/NewList.sh $@
 		;;
 	'del') ###delete a list###
 		shift
-		./Delete.sh $@
+		scripts/Delete.sh $@
 		;;
 	*)
-		cat usage.txt
+		cat scripts/usage.txt
 		exit 1
 		;;
 esac

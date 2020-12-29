@@ -2,7 +2,7 @@
 
 [ -z $1 ] && (echo; echo "<-- Viewing Master -->"; echo)
 
-source Menu.sh # get var $listnames from the selections
+source scripts/Menu.sh # get var $listnames from the selections
 
 echo;echo
 

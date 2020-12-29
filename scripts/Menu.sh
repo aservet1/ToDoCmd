@@ -8,7 +8,7 @@ function abort()
 	exit $rc
 }
 
-cd ../Lists
+cd lists
 todolists=($(ls [!_]*.todo))
 
 if [ -z $1 ]

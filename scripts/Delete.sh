@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./Menu.sh #sets the variable $listnames
+source scripts/Menu.sh #sets the variable $listnames
 
 prompt=">> "
 
