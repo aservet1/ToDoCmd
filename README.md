@@ -23,7 +23,7 @@ From my `$HOME/.profile`:
 I have all of my source files in my `$HOME/cmdtodo` directory, but you can have it wherever you want in your system as long as `$CMDTODO_ROOT` points to it. Then the rest should work fine.
 
 ## How to Use
-Run the `cmdtodo` command with no arguments to get a usage description:
+Run the `cmdtodo` command with no arguments to get a usage description if you need a reminder:
 ```
 usage: cmdtodo <action> <list items>
 
