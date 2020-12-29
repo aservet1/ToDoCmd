@@ -1,10 +1,9 @@
 #!/bin/bash
 
-#texteditor=vim 
-texteditor=nano
+editor=$(sed -e '/^#/d' -e 's/^\s*//' -e 's/\s*$//' texteditor) # parse the 'texteditor' file which specifies which text editor to use
 
 [ -z $1 ] && (echo; echo "<-- Selecting to Edit -->"; echo)
 
 source scripts/Menu.sh
 
-$texteditor $listnames
+$editor $listnames
