@@ -112,4 +112,4 @@ Due dates are denoted in my text files by `## ... #`. What's in the `## ... #` d
 Unix system that can run Bash scripts.
 
 You might notice that Github says that this project includes ~11% Python, but those are currently deprecated files in
-my archive folder. The currently functioning part of this application is written in Bash.
+my archive folder. The currently functioning part of this application is written in Bash, so this can work even if you don't have Python installed.
