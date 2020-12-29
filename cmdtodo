@@ -3,28 +3,28 @@
 cd $CMDTODO_ROOT
 
 case $1 in
-	'e') ###edit###
+	'-e') ###edit###
 		shift
 		scripts/Edit.sh $@
 		;;
-	'v') ###view###
+	'-v') ###view###
 		shift
 		scripts/ViewLists.sh $@
 		;;
-	'f') ###filter###
+	'-f') ###filter###
 		shift
 		tag=$1
 		shift
 		scripts/FilterLists.sh '<'$tag'>' $@
 		;;
-	'dd') ###duedates###
+	'-dd') ###duedates###
 		scripts/ViewLists.sh @ | grep -E '=|##.*#'
 		;;
-	'new') ###make new list###
+	'-new') ###make new list###
 		shift
 		scripts/NewList.sh $@
 		;;
-	'del') ###delete a list###
+	'-del') ###delete a list###
 		shift
 		scripts/Delete.sh $@
 		;;
