@@ -12,7 +12,18 @@ as I had started as a Linux newbie from Windows only two months before.
 Coming soon
 
 ## Installation
-Coming soon
+All you need to do is set an environment variable, `$CMDTODO_ROOT` to the root directory of this project and add it to `$PATH`
+
+I did it in `$HOME/.profile` but I know there are other places where you can configure this. As long as the environment variable
+is set and it's added to `$PATH` then you can type `cmdtodo` anywhere and it'll run the application.
+
+From my `$HOME/.profile`:
+```
+ 28 # setup for cmdtodo
+ 29 export CMDTODO_ROOT="$HOME/cmdtodo"
+ 30 export PATH=$PATH:$CMDTODO_ROOT
+```
+You can have this project folder wherever you want in your system as long as `$CMDTODO_ROOT` points to it. Then the rest should work fine.
 
 ## Dependencies
 Unix system that can run Bash scripts.
