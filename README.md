@@ -9,7 +9,7 @@ This project was not only made as a way to organize my ToDos, but also a way to 
 as I had started as a Linux newbie from Windows only two months before.
 
 ## Features
-...
+Coming soon
 
 ## Installation
 Coming soon. Will probably just be a script that sets your environment variables and whatever other little things are necessary
