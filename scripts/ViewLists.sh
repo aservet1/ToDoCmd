@@ -4,7 +4,7 @@
 
 source Menu.sh # get var $listnames from the selections
 
-echo;echo #;echo
+echo;echo
 
 for list in $listnames
 do
@@ -14,4 +14,4 @@ done
 
 echo "==================================================================="
 
-echo #;echo
+echo

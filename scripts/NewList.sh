@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd Lists
+cd ../Lists
 
 echo "Making New List. Here are the existing ones:"
 for list in $(ls *.todo)
@@ -17,7 +17,7 @@ do
 	echo -n "${promptSymbol}List '${newlistname}' already exists. Pick something else: " && read newlistname
 done
 
-echo ''
+echo
 echo "${promptSymbol}Confirm creating list: $newlistname"
 echo -n "$promptSymbol(y/n): " && read response
 
