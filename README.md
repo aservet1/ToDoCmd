@@ -19,9 +19,9 @@ is set and it's added to `$PATH` then you can type `cmdtodo` anywhere and it'll 
 
 From my `$HOME/.profile`:
 ```
- 28 # setup for cmdtodo
- 29 export CMDTODO_ROOT="$HOME/cmdtodo"
- 30 export PATH=$PATH:$CMDTODO_ROOT
+ # setup for cmdtodo
+ export CMDTODO_ROOT="$HOME/cmdtodo"
+ export PATH=$PATH:$CMDTODO_ROOT
 ```
 You can have this project folder wherever you want in your system as long as `$CMDTODO_ROOT` points to it. Then the rest should work fine.
 
