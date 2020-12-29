@@ -1,2 +1,12 @@
-# ToDoCmd
-A command line ToDo list application. I've been making a series of bash and python scripts over the Fall2019 semester to organize my work. Now I'm making it a bit more organized and adding more features. Making it so it can run on any system instead of just mine with my specific file setup.
+# cmdtodo
+A command line ToDo list application.
+
+Initially, I had a bunch of ToDos in text files throughout my computer. Then I decided to write a Bash script that
+prints them all in one place so I can see all of it. I kept adding features to the script to make the process more user friendly
+and it evantually became a command line to do list application.
+
+## Features
+...
+
+## Dependencies
+Unix system that can run Bash scripts.
