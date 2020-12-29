@@ -1,9 +1,6 @@
 #!/bin/bash
 
-#cd /home/alejandro/Documents/BingFiles/Fall2020/todo_fall2020
-
 symbol=$1
-#symbol=$(echo $symbol | sed 's|\*|\\*|g')
 shift
 
 source Menu.sh $@

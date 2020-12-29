@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/cmdtodo/Lists
+cd Lists
 
 echo "Making New List. Here are the existing ones:"
 for list in $(ls *.todo)

@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#cd /home/alejandro/Documents/BingFiles/Fall2020/todo_fall2020/Lists
-
 function abort()
 {
 	rc=$1

@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#cd /home/alejandro/Documents/BingFiles/Fall2020/todo_fall2020
-
 [ -z $1 ] && (echo; echo "<-- Viewing Master -->"; echo)
 
 source Menu.sh # get var $listnames from the selections
