@@ -104,8 +104,9 @@ The results are printed to the console in the same format as **Viewing List Cont
 If anyone would like me to make it so you can actually change that, post an Issue and then I'll be happy to change it. I just haven't felt
 the need to for my uses so far.
 
-Due dates are denoted in my text files by ## ... #. What's in the ## # doesn't matter, it can be ## monday # or ## tomorrow # or ## sat 12/14 23:59 #.
-This command prints out all of the lists in the same manner as **Viewing List Contents** but only the lines with ## ... # somewhere in them.
+Due dates are denoted in my text files by `## ... #`. What's in the `## ... #` doesn't matter, it can be `## monday #` or `## tomorrow #` or 
+`## sat 12/14 23:59 #`. This command prints out all of the lists in the same manner as **Viewing List Contents** but only the lines with 
+`## ... #` somewhere in them.
 
 ## Dependencies
 Unix system that can run Bash scripts.
