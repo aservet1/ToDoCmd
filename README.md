@@ -12,7 +12,7 @@ as I had started as a Linux newbie from Windows only two months before.
 Coming soon
 
 ## Installation
-Coming soon. Will probably just be a script that sets your environment variables and whatever other little things are necessary
+Coming soon
 
 ## Dependencies
 Unix system that can run Bash scripts.
