@@ -1,5 +1,5 @@
 # cmdtodo
-A command line ToDo list application.
+A command line ToDo list application for Unix based systems.
 
 Initially, I had a bunch of ToDos in text files throughout my computer. Then I decided to write a Bash script that goes through
 all of them and prints their cotents to one main file. I kept adding features to the script to make the process more user friendly
