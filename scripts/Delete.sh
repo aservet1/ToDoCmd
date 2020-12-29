@@ -35,4 +35,4 @@ do
 done
 
 echo;echo "deletions done. remaining lists:"
-ls | sed 's/.todo//g' | sed 's/^/\ \ /'
+ls | sed -e 's/.todo//g' -e 's/^/\ \ /'
