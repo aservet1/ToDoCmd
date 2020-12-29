@@ -10,3 +10,8 @@ and it evantually became a command line to do list application.
 
 ## Dependencies
 Unix system that can run Bash scripts.
+
+## Things I need to add
+- The file paths are absolute to my computer
+- Need to make a global configuration file (for file paths and preferred text editor and stuff like that)
+- Install and uninstall scripts
