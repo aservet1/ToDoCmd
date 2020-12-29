@@ -1,0 +1,24 @@
+#!/bin/bash
+
+function confirm() {
+	echo "Are you sure you want to ((( $1 ))) ?"
+	echo "Make sure you didn't pick the wrong one..."
+	echo -n "(y/n): "
+	read resp
+	[ "$resp" = "y" ] && return 0 || return 1
+}
+
+source ~/.bash_aliases
+
+remote=$myIdeaPad_Home
+
+if   [ "$1" = 'pull' ]; then
+	confirm 'PULL' || exit
+	rsync -avr --exclude='~/cmdtodo/cmdtodosync' $remote/cmdtodo /home/alejandro/
+elif [ "$1" = 'push' ]; then
+	confirm 'PUSH' || exit
+	rsync -avr --exclude='~/cmdtodo/cmdtodosync' /home/alejandro/cmdtodo/ $remote/cmdtodo/
+else
+	echo 'usage: cmdtodosync [push|pull]'
+	exit 2
+fi

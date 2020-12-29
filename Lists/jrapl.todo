@@ -1,0 +1,11 @@
+try to figure out how to get multiple sub-graphs in one graph, makes for neater presentation
+  and less painful data collection / uploading to overleaf processes. ideally one subplot with
+  dram/core/pkg/gpu in one figure will make for a hell of a lot less messy ass LaTeX code and
+  a hell of a lot less painful re-uploading and a hell of a lot more presentable PDF
+
+add another info thing youre tracking for 'number of microseconds between nonzero readings'
+  and make that a third plot for each dram/core/gpu/pkg (again, best to do it all in one fig
+  of 4 subplots)
+
+run thread experiments with 5 and 10 and 20 ms delay (would be cleanest if you find out how to
+  do 4 subplots in one figure, that way it'll be 2 figures per iteration, not 8)
