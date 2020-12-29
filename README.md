@@ -18,3 +18,4 @@ Unix system that can run Bash scripts.
 - The file paths are absolute to my computer
 - Need to make a global configuration file (for file paths and preferred text editor and stuff like that)
 - Install and uninstall scripts
+- Make it convert to groff or troff or nroff or whatever simple PDF syntax
