@@ -1,7 +1,0 @@
--v view selection of lists
--e	edit and view selection of lists
--vpr 	view lines of select lists marked by <***> 		-- view priorities
--vsm 	view lines of select lists marked by <sm>		-- view small tasks
--vbg 	view lines of select lists marked by <bg>		-- view big tasks
--vqt 	view lines of select lists marked by <qt>		-- view quizzes and tests
--vdd 	view lines of all lists indicated with a due date 	-- view due dates
