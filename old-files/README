@@ -1,8 +1,5 @@
 These are old files that I don't use any more. Mostly from old versions of the tool. Feel free to delete.
 
-They are currently useless to the actual functionality of the tool. You can delete this folder
-if you want, or change the files or do literally anything and it won't affect the actual application.
-
 Although they're not used, I'm keeping them around for reference or inspiration, since I did put
 brain juice into them. However, if you decided to take this repo and use it for your own purposes,
-do whatever you want with these files. It won't break the project if you dump them.
+do whatever you want with these files. It won't break the currently working version of the project if you dump them.
