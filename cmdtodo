@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/cmdtodo/scripts
+cd $CMDTODO_ROOT/scripts
 
 case $1 in
 	'e') ###edit###
