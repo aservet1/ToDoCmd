@@ -77,7 +77,7 @@ Before deleting each list, you are given the option to print its contents to the
 and then confirm whether or not you'd like to delete. All deletions are final!
 
 #### Editing Lists
-`cmdtodo -e`: If you do not provide command line arguments, the Menu Prompt will be invoked.
+`cmdtodo -e`: If you do not provide command line arguments, the Menu Prompt above will be invoked.
 
 Opens one or more lists for editing. By default, the text editor is `nano` but you can also use `vim` or `gedit` or really any text editor that can be
 invoked from the command line, as long as it can open multiple files passed as command line arguments. You can specify which one to use in the `texteditor` file
@@ -93,16 +93,16 @@ with the edit command, this one allows you to see them all at once on screen.
 `cmdtodo -f tag`: If you do not provide further command line arguments (after the tag), the Menu Prompt above will be invoked.
 
 Different items in your list might belong to different 'categories', such as *priorities*, *upcoming exams*, *tasks that will take like 5 minutes*,
-*big projects that are due in a while but you should start working on them soon*, etc. The way I solved this was to write a \<tag\> on each line of a certain
+*big projects that are due in a while but you should start working on them soon*, etc. The I handled this by writing a \<tag\> on each line of a certain
 category. So for my priority items, each line had \<pr\> somewhere on it. Then to filter out only those lines, I invoked `cmdtodo -f pr`. You assign whatever
 meaning you want to the \<tag\>s, the `cmdtodo -f` option just allows you to filter out only those entries.
  
 The results are printed to the console in the same format as **Viewing List Contents**.
 
 #### Printing Due Dates
-`cmdtodo -dd`: This one does not take any other command line arguments. I haven't made it so you specify which lists, so I just do it for all of them.
-If anyone would like me to make it so you can actually change that, post an Issue and then I'll be happy to change it. I just haven't felt
-the need to for my uses so far.
+`cmdtodo -dd`: This one does not take any other command line arguments. I haven't made it so you specify which lists, so the program just does it for all of them.
+If anyone would like me to make it so you can actually change that, post an Issue and then I'll be happy to change it. I just haven't really needed the
+speficications in my personal uses of the tool.
 
 Due dates are denoted in my text files by `## ... #`. What's in the `## ... #` doesn't matter, it can be `## monday #` or `## tomorrow #` or 
 `## sat 12/14 23:59 #`. This command prints out all of the lists in the same manner as **Viewing List Contents** but only the lines with 
