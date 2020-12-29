@@ -27,9 +27,3 @@ I have this in my `$HOME` directory, but you can have it wherever you want in yo
 
 ## Dependencies
 Unix system that can run Bash scripts.
-
-## Things I need to add
-- The file paths are absolute to my computer
-- Need to make a global configuration file (for file paths and preferred text editor and stuff like that)
-- Install and uninstall scripts
-- Make it convert to groff or troff or nroff or whatever simple PDF syntax
