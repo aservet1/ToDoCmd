@@ -23,7 +23,7 @@ From my `$HOME/.profile`:
  export CMDTODO_ROOT="$HOME/cmdtodo"
  export PATH=$PATH:$CMDTODO_ROOT
 ```
-I have this in my `$HOME` directory, but you can have it wherever you want in your system as long as `$CMDTODO_ROOT` points to it. Then the rest should work fine.
+I have all of my source files in my `$HOME/cmdtodo` directory, but you can have it wherever you want in your system as long as `$CMDTODO_ROOT` points to it. Then the rest should work fine.
 
 ## Dependencies
 Unix system that can run Bash scripts.
