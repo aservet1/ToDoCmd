@@ -1,7 +1,8 @@
-These are old files from an old version that I started working on in winter 2019. They're
-probably obsolete at this point since I have a new working version of the project but
-I'm keeping them around in case they might be useful for some sort of reference. Anyone
-who is using this code because they found my repo on the internet is more than welcome
-to look through whatever they want of this, but know it's not currently being used in
-the actual 'cmdtodo' application, so you can just delete this folder and everything in
-it if you don't want to deal with any of this.
+These are old files that I don't use any more. Mostly from old versions of the tool.
+
+They are currently useless to the actual functionality of the tool. You can delete this folder
+if you want, or change the files or do literally anything and it won't affect the actual application.
+
+Although they're not used, I'm keeping them around for reference or inspiration, since I did put
+brain juice into them. However, if you decided to take this repo and use it for your own purposes,
+do whatever you want with these files. It won't break the project if you dump them.
