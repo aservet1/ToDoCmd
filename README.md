@@ -6,7 +6,7 @@ all of them and prints their cotents to one main file. I kept adding features to
 and it evantually became a command line to do list application.
 
 This project was not only made as a way to organize my ToDos, but also a way to learn Bash scripting and how to work in the Unix environment,
-as I had started as a Linux newbie from Windows only two months before.
+as I had started as a Linux newbie coming over from Windows only two months before.
 
 ## Installation
 All you need to do is set an environment variable, `$CMDTODO_ROOT` to the root directory of this project and add it to `$PATH`
