@@ -28,7 +28,7 @@ case $1 in
 		echo 'feature coming soon, should be in by no later than 2024 (no promises)'
 		;;
 	*)
-		echo usage.txt
+		cat usage.txt
 		exit 1
 		;;
 esac
