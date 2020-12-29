@@ -38,7 +38,7 @@ usage: cmdtodo <action> <list items>
   list items is optional. if empty, it prompts a menu of lists to perform action on.
   if not empty, use a space separated list of names or numbers that come up on the menu
 ```
-### The Menu Prompt
+#### The Menu Prompt
 In use cases where you interact with one or more lists, and you do not provide them as command line arguments, you will get a menu prompt:
 ```
 | Options:
@@ -66,30 +66,30 @@ The Menu Prompt applies to editing, viewing, filtering, and deleting operations 
 Unix wildcard symbols are not supported, so you can't use `cs*` as a placeholder for `cs240 cs350 cs375 cs476 cs499`. You'll get whatever error the
 Bash interpreter gets from trying to process that and not having it work with how my script is set up.
 
-### Creating a New List
+#### Creating a New List
 `cmdtodo -new`: You can follow this command with the name of the new list. If you do not provide the name, you will be asked for one. If there already
 exists a list with that name, you will be asked to provide another name.
 
-### Deleting Lists
+#### Deleting Lists
 `cmdtodo -del`: If you do not provide command line arguments, the Menu Prompt above will be invoked.
 
 Before deleting each list, you are given the option to print its contents to the console (just to make sure you know what you're deleting)
 and then confirm whether or not you'd like to delete. All deletions are final!
 
-### Editing Lists
+#### Editing Lists
 `cmdtodo -e`: If you do not provide command line arguments, the Menu Prompt will be invoked.
 
 Opens one or more lists for editing. By default, the text editor is `nano` but you can also use `vim` or `gedit` or really any text editor that can be
 invoked from the command line, as long as it can open multiple files passed as command line arguments. You can specify which one to use in the `texteditor` file
 in the root directory of this project
 
-### Viewing List Contents
+#### Viewing List Contents
 `cmdtodo -v`: If you do not provide command line arguments, the Menu Prompt above will be invoked.
 
 Prints the list contents to the console. Each list is separated by `==========listname===========`. While you can also view list contents
 with the edit command, this one allows you to see them all at once on screen.
 
-### Filtering List Contents
+#### Filtering List Contents
 `cmdtodo -f tag`: If you do not provide further command line arguments (after the tag), the Menu Prompt above will be invoked.
 
 Different items in your list might belong to different 'categories', such as *priorities*, *upcoming exams*, *tasks that will take like 5 minutes*,
@@ -99,7 +99,7 @@ meaning you want to the <tag>s, the `cmdtodo -f` option just allows you to filte
  
 The results are printed to the console in the same format as **Viewing List Contents**.
 
-### Printing Due Dates
+#### Printing Due Dates
 `cmdtodo -dd`: This one does not take any other command line arguments. I haven't made it so you specify which lists, so I just do it for all of them.
 If anyone would like me to make it so you can actually change that, post an Issue and then I'll be happy to change it. I just haven't felt
 the need to for my uses so far.
