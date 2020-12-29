@@ -25,7 +25,9 @@ case $1 in
 		./NewList.sh $@
 		;;
 	'del') ###delete a list###
-		echo 'feature coming soon, should be in by no later than 2024 (no promises)'
+		#echo 'feature coming soon, should be in by no later than 2024 (no promises)'
+		shift
+		./Delete.sh $@
 		;;
 	*)
 		cat usage.txt
