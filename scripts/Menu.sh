@@ -19,7 +19,7 @@ then	echo '| Options:'
 	done
 	echo '|  @  all'
 	echo '| Enter the ones you want by name or number: '
-	echo -n '| > '
+	echo -n '| >> '
 	read lists_requested
 else	lists_requested="$@"
 fi
