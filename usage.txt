@@ -9,4 +9,4 @@ usage: cmdtodo <action> <list items>
     -dd -- filter lines with a ## due date #. all lists are shown here 
 
   list items is optional. if empty, it prompts a menu of lists to perform action on.
-   if not empty, use a space separated list of names or numbers that come up on the menu 
+  if not empty, use a space separated list of names or numbers that come up on the menu 
