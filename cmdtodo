@@ -29,7 +29,7 @@ case $1 in
 		scripts/Delete.sh $@
 		;;
 	*)
-		cat scripts/usage.txt
+		cat usage.txt
 		exit 1
 		;;
 esac
