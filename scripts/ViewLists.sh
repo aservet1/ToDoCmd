@@ -1,6 +1,6 @@
 #!/bin/bash
 
-[ -z $1 ] && (echo; echo "<-- Viewing Master -->"; echo)
+[ -z $1 ] && (echo; echo "<-- Viewing Lists -->"; echo)
 
 source scripts/Menu.sh # get var $listnames from the selections
 
