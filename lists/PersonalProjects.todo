@@ -1,5 +1,7 @@
 make raspi backup system
 new screen for chromebook
 
-<pr>backup / syncing using remote.cs
 figure out how to make columns for CourseLinks
+
+cmtodo: autofill command arguments and have multiple filter options
+grep due dates and sort / display them by date parsed from them <pr>
