@@ -1,12 +1,13 @@
 # cmdtodo
 A command line ToDo list application for Unix based systems.
 
-Initially, I had a bunch of ToDos in text files throughout my computer. Then I decided to write a Bash script that goes through
-all of them and prints their cotents to one main file. I kept adding features to the script to make the process more user friendly
-and it evantually became a command line to do list application.
+This project started when I had a bunch of todolists scattered in text files throughout my computer.
+It was tedious to look through all of them, so I then decided to write a Bash script that goes through
+all of them and prints their cotents to one main file. I kept adding features to the script to make the process more
+useful and user friendly and it evantually became a full command line tool.
 
-This project was not only made as a way to organize my ToDos, but also a way to learn Bash scripting and how to work in the Unix environment,
-as I had started as a Linux newbie coming over from Windows only two months before.
+I also used this project as a way to learn Bash scripting and how to work with the Unix shell,
+as I had started as a Linux newbie only two months before.
 
 ## Installation
 All you need to do is set an environment variable, `$CMDTODO_ROOT` to the root directory of this project and add it to `$PATH`
@@ -49,7 +50,7 @@ usage: cmdtodo <action> <list items>
 In use cases where you interact with one or more lists, and you do not provide them as command line arguments, you will get a menu prompt:
 ```
 | Options:
-|  1) ClimateChange
+|  1) CliChange
 |  2) cs240
 |  3) cs350
 |  4) cs375
@@ -122,4 +123,6 @@ Due dates are denoted in my text files by `## ... #`. What's in the `## ... #` d
 Unix system that can run Bash scripts.
 
 You might notice that Github says that this project includes ~11% Python, but those are currently deprecated files in
-my archive folder. The currently functioning part of this application is written in Bash, so this can work even if you don't have Python installed.
+my archive folder. I keep my old files that I put brain work into around for if they are useful later, but that's not
+part of the project at all. So you don't have to worry about this not working on the off chance that you don't have Python
+installed.
