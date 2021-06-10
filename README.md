@@ -30,13 +30,20 @@ usage: cmdtodo <action> <list items>
   action options:
     -new -- make a new list
     -del -- delete a list
+    
     -e  -- edit lists
     -v  -- view lists
-    -f [tag] -- filter lists by tag. (lines per list with <> around the 'tag' string)
+    -f [tag] -- view list filtered by <...> tags.
     -dd -- filter lines with a ## due date #. all lists are shown here 
+	
+    -ls -- display all of your current existing lists
 
-  list items is optional. if empty, it prompts a menu of lists to perform action on.
-  if not empty, use a space separated list of names or numbers that come up on the menu
+    -h -- display this help message
+
+  <list items> Is optional. If empty, and the command requires
+  arguments, it prompts a menu of lists to perform action on.
+  If not empty, use a space separated list of names or numbers
+  that you would've entered on the menu prompt.
 ```
 #### The Menu Prompt
 In use cases where you interact with one or more lists, and you do not provide them as command line arguments, you will get a menu prompt:
@@ -69,6 +76,9 @@ Bash interpreter gets from trying to process that and not having it work with ho
 #### Creating a New List
 `cmdtodo -new`: You can follow this command with the name of the new list. If you do not provide the name, you will be asked for one. If there already
 exists a list with that name, you will be asked to provide another name.
+
+#### Viewing your lists
+`cmdtodo -ls`: Displays the lists you currently have.
 
 #### Deleting Lists
 `cmdtodo -del`: If you do not provide command line arguments, the Menu Prompt above will be invoked.

@@ -11,7 +11,7 @@ case $1 in
 		shift
 		scripts/ViewLists.sh $@
 		;;
-	'-f') ###filter###
+	'-f') ###filtered###
 		shift
 		tag=$1
 		shift
@@ -27,6 +27,12 @@ case $1 in
 	'-del') ###delete a list###
 		shift
 		scripts/Delete.sh $@
+		;;
+	'-ls') ###display the lists that you have###
+		./scripts/DisplayLists.sh
+		;;
+	'-h') ###help###
+		cat usage.txt
 		;;
 	*)
 		cat usage.txt

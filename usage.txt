@@ -3,10 +3,17 @@ usage: cmdtodo <action> <list items>
   action options:
     -new -- make a new list
     -del -- delete a list
+    
     -e  -- edit lists
     -v  -- view lists
-    -f [tag] -- filter lists by tag. (lines per list with <> around the 'tag' string)
+    -f [tag] -- view list filtered by <...> tags.
     -dd -- filter lines with a ## due date #. all lists are shown here 
+	
+    -ls -- display all of your current existing lists
 
-  list items is optional. if empty, it prompts a menu of lists to perform action on.
-  if not empty, use a space separated list of names or numbers that come up on the menu 
+    -h -- display this help message
+
+  <list items> Is optional. If empty, and the command requires
+  arguments, it prompts a menu of lists to perform action on.
+  If not empty, use a space separated list of names or numbers
+  that you would've entered on the menu prompt.

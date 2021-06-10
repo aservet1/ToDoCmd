@@ -9,5 +9,7 @@ lists=$listnames
 for list in $lists
 do
 	echo "============================${list//'.todo'/}========================"
-	grep -E ".*"$symbol".*" $list | sed "s/$symbol//g"
+	grep -E ".*$symbol.*" $list | sed "s/$symbol//g"
 done
+
+echo "============================================================="
